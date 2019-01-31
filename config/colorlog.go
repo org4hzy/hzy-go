@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"hzy/util"
+	"github.com/hzy/util"
 
 	ct "github.com/daviddengcn/go-colortext"
 )
@@ -44,18 +44,18 @@ func Launcher(path string, name string) bool {
 }
 
 // Info info print and write file
-func Info(format string, args interface{}) {
-	printLog(fmt.Sprintf(format, args), ct.Green)
+func Info(format string, args ...interface{}) {
+	printLog(fmt.Sprintf(format, args...), ct.Green)
 }
 
 // Warning warn print and write file
-func Warning(format string, args interface{}) {
-	printLog(fmt.Sprintf(format, args), ct.Yellow)
+func Warning(format string, args ...interface{}) {
+	printLog(fmt.Sprintf(format, args...), ct.Yellow)
 }
 
 // Error err print and write file
-func Error(format string, args interface{}) {
-	printLog(fmt.Sprintf(format, args), ct.Red)
+func Error(format string, args ...interface{}) {
+	printLog(fmt.Sprintf(format, args...), ct.Red)
 }
 
 /////////////////////////////////////////////

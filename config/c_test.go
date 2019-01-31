@@ -31,7 +31,7 @@ func TestLFF(t *testing.T) {
 func TestCLog(t *testing.T) {
 	Launcher("/d/var", "testcolorlog")
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		Info(" this is a info test .")
 		Warning(" this is a warn test !")
 		Error("  this is a error test !!!")
