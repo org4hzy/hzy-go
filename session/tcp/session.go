@@ -24,7 +24,7 @@ type Result struct {
 //CallBack request call back
 type CallBack func(*Result)
 
-// IHandler 调度器接口, 实现调度器，完成功能
+// IHandler 调度器接口, 逻辑对接
 type IHandler interface {
 	OnOpen(s *Session)
 	OnClose(s *Session)

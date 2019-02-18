@@ -11,7 +11,7 @@ import (
 	ct "github.com/daviddengcn/go-colortext"
 )
 
-const ckInter int64 = 1000
+const checkInter int64 = 1000
 
 var (
 	logFile *log.Logger
@@ -73,7 +73,7 @@ func checkFile() {
 }
 
 func initArgs(path string, name string) {
-	create, nextCk, fPath, fName = util.GetTs(), create+ckInter, path, name
+	create, nextCk, fPath, fName = util.GetTs(), create+checkInter, path, name
 }
 
 func printLog(msg string, clr ct.Color) {

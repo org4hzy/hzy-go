@@ -23,9 +23,8 @@ func LoadFromFile(fp string, j interface{}) bool {
 	return true
 }
 
-// ToJson 打印数据结构为json
-func ToJson(d interface{}) string {
-
+// ToJSON 打印数据结构为json
+func ToJSON(d interface{}) string {
 
 	return ""
 }
