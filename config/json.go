@@ -23,8 +23,12 @@ func LoadFromFile(fp string, j interface{}) bool {
 	return true
 }
 
-// ToJSON 打印数据结构为json
+// ToJSON only accesses the exported fileds of struct types(an uppercase letter.)
 func ToJSON(d interface{}) string {
+	bytes, err := json.Marshal(d)
+	if err != nil {
+		return err.Error()
+	}
 
-	return ""
+	return string(bytes)
 }

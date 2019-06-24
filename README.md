@@ -1,7 +1,7 @@
 # hzy
 用于游戏功能的部分接口go函数
 
-#收集有用的go开源项目
+## 收集有用的go开源项目
 
 * 格式化日志系统 https://github.com/sirupsen/logrus.git
 
@@ -63,4 +63,5 @@ c.p = &redis.Pool{
 * go-mysql驱动 https://github.com/go-sql-driver/mysql.git
 * go-protobuf https://github.com/golang/protobuf.git
 * go-colortext https://github.com/daviddengcn/go-colortext.git
+* go dep 命令 https://github.com/golang/dep.git
 
